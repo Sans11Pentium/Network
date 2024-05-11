@@ -32,6 +32,11 @@ body{
     /* padding-left:40px;
     padding-right:40px; */
 }
+.card:hover{
+    transform: scale(1.02);
+    opacity: 0.8;
+    cursor: pointer;
+}
 .logo{
     background-image: url("DRDO.avif");
     height:100%;
@@ -129,6 +134,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.wire-card:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+    cursor: pointer;
 }
 .building{
     height:80%;
