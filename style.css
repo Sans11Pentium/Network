@@ -1,0 +1,257 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #121212;
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    height:5.5rem;
+    width: 100%;
+    background: radial-gradient(780px at 37.8% 100.3%, rgb(19, 55, 115) 2.2%, rgb(32, 7, 80) 20.2%, rgb(27, 88, 111) 58.6%, rgb(115, 88, 44) 75%, rgb(99, 19, 90) 89.6%, rgb(12, 51, 76) 96.1%);
+    display: flex;
+    justify-content: space-between;
+    position: static;
+}
+.nav-logo{
+    display: flex;
+    justify-content: center;
+    height:90px;
+    width:150px;
+}
+.card{
+    /* height:90%; */
+    width:40%;
+    border:1px solid white;
+    box-shadow:10px 10px white;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #003060;
+    /* padding-left:40px;
+    padding-right:40px; */
+}
+.logo{
+    background-image: url("DRDO.avif");
+    height:100%;
+    width:100%;
+    background-size: contain;
+    margin: auto;
+}
+.txt{
+    width:40%;
+    height:40%;
+    color:whitesmoke;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-wrap:nowrap;
+    /* padding-top:30px; */
+    /* padding-right:200px; */
+}
+.drdo-text{
+    margin-top:20px;
+}
+.search{
+    width:30%;
+}
+.inp{
+    text-decoration: none;
+    background-color: transparent;
+    height:30px;
+    width:70%;
+    border:1.4px solid rgb(208, 202, 202);
+    border-radius: 14px;
+    color:white;
+    margin-top: 35px;
+}
+::placeholder{
+    color:white;
+    padding-left:6px;
+}
+.content1{
+    height:20rem;
+    display: flex;
+}
+.sspl-img{
+    height:90%;
+    width:65%;
+    background-image: url("sspl.jpg");
+    background-size: cover;
+}
+.desc{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    line-height:1.5rem;
+    text-align: center;
+    justify-content: center;
+    padding-left:10px;
+}
+.content2{
+    display:flex;
+    background-color: #121212;
+    height:20rem;
+    width:100%;
+    color:white;
+    font-size:15px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.content2 h3{
+    font-weight:900;
+    font-size:20px;
+}
+.btn{
+    width:120px;
+    height:50px;
+    text-decoration: none;
+    background-color: #0E86D4;
+    color: white;
+    border:none;
+    border-radius: 14px;
+}
+.network{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.wire-card{
+    height:170px;
+    width:70%;
+    background-color: rgb(19, 55, 115);
+    margin-top:1rem;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.building{
+    height:80%;
+    width: 20%;
+    background-image: url("./iso_city_tower_02.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-weight: 600;
+}
+.wire{
+    height:0.4rem;
+    width:100%;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 14px;
+}
+@keyframes pingAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        background-color: lightgreen;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+        background-color: green;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        background-color: lightgreen;
+    }
+}
+
+.pinging {
+    animation: pingAnimation 1s infinite;
+}
+
+
+.line{
+    width:55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cable {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(90deg, #808080 50%, #fff 50%);
+    background-size: 10px 100%;
+    border-radius: 10px;
+    position: relative;
+    margin: 50px auto;
+}
+.cable::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(135deg, #ccc, #ccc 3px, transparent 3px, transparent 6px);
+    border-radius: 10px;
+}
+.cable::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(45deg, #ccc, #ccc 3px, transparent 3px, transparent 6px);
+    border-radius: 10px;
+}
+
+@media(max-width:560px){
+    .drdo-text, .sspl{
+        font-size:14px;
+    }
+    .logo{
+        height:70px;
+        width:100px;
+    }
+    .navbar{
+        height: 5rem;
+    }
+}
+@media(max-width:879px){
+    .search{
+        z-index:-1;
+    }
+}
+@media(max-width:430px){
+    .drdo-text, .sspl{
+        font-size:8px;
+    }
+}
+@media(max-width:850px){
+    .content1{
+        flex-direction: column;
+    }
+    .sspl-img{
+        width:100%;
+    }
+}
+@media(max-width:830px){
+    .content2{
+        height: 40rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card{
+        width:70%;
+        margin-bottom: 2.5rem;
+    }
+}
+@media(max-width:700px){
+    .wire-card{width:95%;}
+}
+@media(max-width:852px){
+    .wire-card{
+        height:100px;
+    }
+}
